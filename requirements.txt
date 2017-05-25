@@ -1,0 +1,12 @@
+# ez a file a python virtualenv csomagokat tertalmazza
+# telepíteni a virtualenv-en belül kell. 
+
+click==6.7
+dnspython==1.12.0
+Flask==0.12.2
+itsdangerous==0.24
+Jinja2==2.9.6
+MarkupSafe==1.0
+pycrypto==2.6.1
+virtualenv==15.1.0
+Werkzeug==0.12.2
