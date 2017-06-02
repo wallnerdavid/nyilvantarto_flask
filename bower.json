@@ -1,0 +1,21 @@
+{
+  "//": "ezt a file-t a bower inittel generáltuk",
+  "//": "tartalmazza a frontent függőségeket",
+  "//": "telepíteni a bower install parancsal lehet",
+  "name": "jquery",
+  "main": "dist/jquery.js",
+  "license": "MIT",
+  "ignore": [
+    "package.json"
+  ],
+  "keywords": [
+    "jquery",
+    "javascript",
+    "browser",
+    "library"
+  ],
+ "dependencies": {
+   "jquery": "1.9.1 - 3",
+   "bootstrap": "^3.3.7"
+ } 
+}
