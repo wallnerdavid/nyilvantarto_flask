@@ -22,8 +22,18 @@ background-color: #e8f1ff;
      display: none;
 }
 
+.add {
+	padding: 4px 16px;
+	margin: 10px;
+	float: right;
+	border-radius: 5px;
+}
 
-
+.remove {
+	display: inline-block;
+	padding: 4px 12px;
+	border-radius: 5px;
+}
 
 
 
