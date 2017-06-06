@@ -9,5 +9,15 @@
  
      $("#"+clickedId+".menu-item").removeClass("btn-secondary");
      $("#"+clickedId+".menu-item").addClass("btn-primary");
-	};
+}
+
+
+function addMunkanap() {
+	$('#munkanapItems').append(`
+	<div>HELLO</div>
+
+		`);
+
+}
+
 

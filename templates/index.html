@@ -29,22 +29,22 @@
    <button class="add btn-success" onclick="addMunkanap()">+</button>
   </div>
 
-	<div class="munkanapok">
-	Ird be a munkanapot:
-	<form id="munkanapItems">
-	  <div class="new_munkanap row">
-		<div class="col-xs-6 col-sm-2">
-	    <input type="text" value="datum">
-		</div>
-		 <div class="col-xs-6 col-sm-2">
-		    <input type="number" min="0.5" max="12" step="0.5" placeholder="munkaóra">
-		</div>
-		<div class="col-xs-12 col-sm-6">
-	    <textarea rows="3" placeholder="megjegyzés"></textarea>
-		</div>
-	  </div>
-	<button class="remove btn-danger" onclick="removeMunkanap(this.id)">-</button>
-	</form>
+  <div class="munkanapok">
+   <h3>Ird be a munkanapot: </h3>
+  <form id="munkanapItems" class="row">
+    <div class="new_munkanap">
+    <div class="col-xs-6 col-sm-2">
+      <input type="text" value="datum">
+    </div>
+     <div class="col-xs-6 col-sm-2">
+        <input type="number" min="0.5" max="12" step="0.5" placeholder="munkaóra">
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <textarea rows="3" placeholder="megjegyzés"></textarea>
+    </div>
+    </div>
+  <button class="remove btn-danger" onclick="removeMunkanap(this.id)">-</button>
+  </form>
     </div>
 </div>
 <div id="2" class="inactive-content content container col-md-8 col-md-offset-2">
@@ -54,7 +54,7 @@ javascript package manager (nodejs) : npm <br>
 web package manager: <br>
 <code>bower (npm install --global bower ) </code> <br>
 Web package-ek telepítése a static mappába: <br>
-<code>bover install bootstrap </code>	<br>
+<code>bover install bootstrap </code> <br>
 
 <h2>BackEnd: </h2> <br>
 Python3 telepítése:
@@ -78,23 +78,3 @@ Logout....
 </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
