@@ -3,12 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <title>Flask App</title>
-</head>
+<!-- bootstrap, jquery -->
 <script type="text/javascript" src="{{ url_for('static', filename='bower_components/jquery/dist/jquery.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-<script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
+
+<!-- bootstrap datepicker -->
+<script type="text/javascript" src="{{ url_for('static', filename='bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.hu.min.js') }}"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css') }}">
+
+<!-- saját script és css fájlok -->
+<script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+
+</head>
 
 <body>
 <nav class="navbar container">
@@ -26,26 +35,18 @@
   {#   további infok: http://jinja.pocoo.org/docs/2.9/  #}
  <h1>Hello {{ user }}</h1>
   <div class=add_button>
-   <button class="add btn-success" onclick="addMunkanap()">+</button>
+   <button class="add btn btn-success" onclick="addMunkanap()">+</button>
   </div>
 
   <div class="munkanapok">
    <h3>Ird be a munkanapot: </h3>
   <form id="munkanapItems" class="row">
-    <div class="new_munkanap row">
-    <button class="remove btn btn-danger" onclick="removeMunkanap(this.id)">-</button>
-    <div class="col-xs-6 col-sm-2">
-      <input type="text" placeholder="datum" class="datum_mezo form-control" >
-    </div>
-     <div class="col-xs-6 col-sm-2">
-        <input type="number" min="0.5" max="12" step="0.5" class="munkaora form_control" placeholder="munkaóra">
-    </div>
-    <div class="col-xs-12 col-sm-6">
-      <textarea rows="3" class="form-control" placeholder="megjegyzés"></textarea>
-    </div>
-    </div>
+    <!-- ide már a JS fogja generálni a html-t -->
   </form>
+    <div class="row">
+     <button class="btn btn-info savegomb" id="1" onclick="sendForm()"">Mentés</button>
     </div>
+  </div>
 </div>
 <div id="2" class="inactive-content content container col-md-8 col-md-offset-2">
  <h1> Dev környezet web apphoz </h1>
@@ -74,7 +75,6 @@ Python csomagok telepítése: <br>
 
 </div>
 <div id="3" class="content container col-md-8 col-md-offset-2">
-Logout....
 </div>
 </body>
 </html>
